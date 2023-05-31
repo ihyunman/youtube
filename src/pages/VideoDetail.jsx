@@ -13,8 +13,9 @@ function VideoDetail() {
   const { title, publishedAt, thumbnails, channelTitle, description } =
     video.snippet;
 
-  const videoId = video.id.videoId;
-  console.log(videoId);
+  const videoId =
+    typeof video.id.videoId === undefined ? video.id.videoId : video.id;
+
   return (
     <div className="video__detail">
       <section className="video__detail--video">
