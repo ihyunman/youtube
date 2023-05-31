@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  height: 8vh;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+
+.icons > svg {
+  color: red;
+  font-size: 30px;
+}
+
+.search {
+  width: 40%;
+}
+
+.header__search {
+  width: 80%;
+  height: 30px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}

@@ -1,0 +1,40 @@
+.video__detail {
+  display: flex;
+  width: 100%;
+}
+
+.video__detail--video {
+  width: 70%;
+}
+
+.video__detail--title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0px 10px;
+}
+.video__detail--desc {
+  border: 1px solid gray;
+  margin: 10px 10px 0px;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-weight: 500;
+}
+
+.video__detail--list {
+  width: 30%;
+}
+
+.yVideo {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  margin: 10px 20px;
+  border-radius: 5px;
+}
+
+.yVideo iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
