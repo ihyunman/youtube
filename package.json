@@ -25,8 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "homepage": "https://ihyunman.github.io/youtube/"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
