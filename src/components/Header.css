@@ -5,7 +5,7 @@
   margin: 10px 20px;
   font-size: 24px;
   font-weight: bold;
-  height: 8vh;
+  height: 7vh;
 }
 
 .icons {
@@ -20,13 +20,42 @@
   font-size: 30px;
 }
 
-.search {
-  width: 40%;
+.header__search {
+  display: flex;
+  width: 30%;
+  border: 2px solid gray;
+  border-radius: 5px;
+  align-items: center;
 }
 
-.header__search {
-  width: 80%;
+.header__search--input {
+  width: 85%;
   height: 30px;
-  border: 1px solid gray;
-  border-radius: 5px;
+  border: none;
+  border-right: 1px solid gray;
+  background-color: #1d1d1d;
+  padding-left: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.header__search--input::placeholder {
+  color: gray;
+  font-weight: bold;
+}
+
+.header__search--btn {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+}
+
+.header__search--btn:hover {
+  color: gray;
+}
+
+.header__user--btn {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
 }

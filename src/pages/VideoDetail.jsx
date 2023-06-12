@@ -1,17 +1,21 @@
 import { useQuery } from "@tanstack/react-query";
 import React from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import getVideos from "../api/getVideos";
 import VideoCard from "../components/VideoCard";
 import "./VideoDetail.css";
+import VideoInfo from "../components/VideoInfo";
 function VideoDetail() {
-  const { data: videos } = useQuery(["videos", "related"], getVideos, {
-    retry: 0,
-  });
+  const { data: videos } = useQuery(
+    ["videos", "related", { keyword: " " }],
+    getVideos,
+    {
+      retry: 0,
+    }
+  );
 
   const video = useLocation().state;
-  const { title, publishedAt, thumbnails, channelTitle, description } =
-    video.snippet;
+  const { title, description, channelTitle, thumbnails } = video.snippet;
 
   const videoId =
     typeof video.id.videoId === undefined ? video.id.videoId : video.id;
@@ -27,7 +31,9 @@ function VideoDetail() {
             allowfullscreen
           />
         </div>
-        <p className="video__detail--title">{title}</p>
+        <h2 className="video__detail--title">{title}</h2>
+        <VideoInfo title={channelTitle} url={thumbnails.default.url} />
+
         <p className="video__detail--desc">{description}</p>
       </section>
       <ul className="video__detail--list">
