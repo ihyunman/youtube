@@ -46,6 +46,23 @@
   width: 40%;
   display: flex;
   flex-direction: column;
-  font-size: 12px;
-  margin: 0 10px;
+  font-size: 14px;
+}
+
+.videor__title {
+  font-weight: 700;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.videor__channel,
+.videor__publish {
+  opacity: 0.8;
+  font-weight: 600;
+}
+
+.videor__info > * {
+  margin: 5px 10px;
 }

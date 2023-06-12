@@ -1,6 +1,7 @@
 import React from "react";
 import "./VideoCard.css";
 import { useNavigate } from "react-router-dom";
+import formatDate from "../util/date";
 function VideoCard({ video, type }) {
   const classType = type === "popular" ? "video" : "videor";
   const { title, publishedAt, thumbnails, channelTitle } = video.snippet;
@@ -24,7 +25,7 @@ function VideoCard({ video, type }) {
       <div className={`${classType}__info`}>
         <p className={`${classType}__title`}>{title}</p>
         <p className={`${classType}__channel`}>{channelTitle}</p>
-        <p className={`${classType}__publish`}>{publishedAt}</p>
+        <p className={`${classType}__publish`}>{formatDate(publishedAt)}</p>
       </div>
     </li>
   );
