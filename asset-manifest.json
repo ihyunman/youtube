@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/youtube/static/css/main.712bd959.css",
-    "main.js": "/youtube/static/js/main.16124f57.js",
-    "index.html": "/youtube/index.html",
-    "main.712bd959.css.map": "/youtube/static/css/main.712bd959.css.map",
-    "main.16124f57.js.map": "/youtube/static/js/main.16124f57.js.map"
+    "main.css": "/youtube/static/css/main.2f4f4c78.css",
+    "main.js": "/youtube/static/js/main.9d5abe8d.js",
+    "static/media/Jalnan.ttf": "/youtube/static/media/Jalnan.4b55e11e029184231b61.ttf",
+    "index.html": "/youtube/index.html"
   },
   "entrypoints": [
-    "static/css/main.712bd959.css",
-    "static/js/main.16124f57.js"
+    "static/css/main.2f4f4c78.css",
+    "static/js/main.9d5abe8d.js"
   ]
 }
