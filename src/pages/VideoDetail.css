@@ -8,6 +8,7 @@
 }
 
 .video__detail--title {
+  font-family: "yeogi";
   display: block;
   white-space: nowrap;
   overflow: hidden;
@@ -18,6 +19,7 @@
   font-size: 24px;
   margin: 0px 10px;
 }
+
 .video__detail--desc {
   background-color: gray;
   margin: 10px 10px 0px;
@@ -44,4 +46,17 @@
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+@media screen and (max-width: 900px) {
+  .video__detail {
+    flex-direction: column;
+  }
+  .video__detail--video {
+    width: 100%;
+  }
+
+  .video__detail--list {
+    width: 100%;
+  }
 }
