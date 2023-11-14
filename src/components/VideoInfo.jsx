@@ -1,4 +1,4 @@
-import "./VideoInfo.css";
+import "./css/VideoInfo.css";
 
 function VideoInfo({ title, url }) {
   return (

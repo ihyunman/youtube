@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
 import VideoCard from "../components/VideoCard";
-import "./Videos.css";
+import "./css/Videos.css";
 import { useQuery } from "@tanstack/react-query";
 import getVideos from "../api/getVideos";
 import { useSearchAPI } from "../context/SearchAPI";

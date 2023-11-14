@@ -1,9 +1,9 @@
 import { useQuery } from "@tanstack/react-query";
-import React from "react";
+import { useState } from "react";
 import { useLocation } from "react-router-dom";
 import getVideos from "../api/getVideos";
 import VideoCard from "../components/VideoCard";
-import "./VideoDetail.css";
+import "./css/VideoDetail.css";
 import VideoInfo from "../components/VideoInfo";
 function VideoDetail() {
   const { data: videos } = useQuery(
@@ -20,6 +20,8 @@ function VideoDetail() {
   const videoId =
     typeof video.id.videoId === undefined ? video.id.videoId : video.id;
 
+  const [summary, setSummary] = useState("overview");
+
   return (
     <div className="video__detail">
       <section className="video__detail--video">
@@ -33,8 +35,17 @@ function VideoDetail() {
         </div>
         <h2 className="video__detail--title">{title}</h2>
         <VideoInfo title={channelTitle} url={thumbnails.default.url} />
-
-        <p className="video__detail--desc">{description}</p>
+        <div className="video__detail--descWrap">
+          <span
+            className="video__detail--descBtn"
+            onClick={() =>
+              summary === "" ? setSummary("overview") : setSummary("")
+            }
+          >
+            {summary === "overview" ? "자세히보기" : "간략히"}
+          </span>
+          <p className={`video__detail--desc ${summary}`}>{description}</p>
+        </div>
       </section>
       <ul className="video__detail--list">
         {videos &&

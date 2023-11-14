@@ -1,5 +1,4 @@
-import React from "react";
-import "./VideoCard.css";
+import "./css/VideoCard.css";
 import { useNavigate } from "react-router-dom";
 import formatDate from "../util/date";
 function VideoCard({ video, type }) {

@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineYoutube, AiOutlineSearch } from "react-icons/ai";
 import { BiUserCircle } from "react-icons/bi";
 import { Link, useNavigate, useParams } from "react-router-dom";
-import "./Header.css";
+import "./css/Header.css";
 import { useSearchAPI } from "../context/SearchAPI";
 
 function Header() {

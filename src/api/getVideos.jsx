@@ -3,7 +3,6 @@ import axios from "axios";
 export default async function getVideos({ queryKey }) {
   const type = queryKey[1];
   const { keyword } = queryKey[2];
-  console.log(keyword);
 
   return await axios
     .get(`https://ihyunman.github.io/youtube/items/${type}.json`)

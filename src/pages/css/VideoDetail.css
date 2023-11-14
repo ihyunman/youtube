@@ -20,13 +20,32 @@
   margin: 0px 10px;
 }
 
-.video__detail--desc {
+.video__detail--descWrap {
+  display: flex;
+  flex-direction: column-reverse;
   background-color: gray;
+  font-weight: 500;
   margin: 10px 10px 0px;
   border-radius: 5px;
   padding: 10px 10px;
-  font-weight: 500;
   white-space: pre-line;
+}
+
+.video__detail--descBtn {
+  margin: 10px 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.video__detail--descBtn:hover {
+  color: rgb(96, 95, 95);
+}
+
+.video__detail--desc.overview {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 4;
 }
 
 .video__detail--list {
