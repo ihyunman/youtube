@@ -16,17 +16,11 @@ function Videos() {
     }
   );
 
-  console.log("enter");
-
   return (
     <ul className="videos">
       {videos &&
-        videos.map((video, index) => {
-          if (keyword.length > 0 && video.snippet.title.includes(keyword)) {
-            return <VideoCard key={index} video={video} type="popular" />;
-          } else {
-            return <VideoCard key={index} video={video} type="popular" />;
-          }
+        videos.map((video) => {
+          return <VideoCard key={video.id} video={video} type="popular" />;
         })}
     </ul>
   );
