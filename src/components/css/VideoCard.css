@@ -12,6 +12,7 @@
 .video__img:hover,
 .videor__img {
   opacity: 0.9;
+  transform: scale(1.05);
 }
 
 .video__title {
