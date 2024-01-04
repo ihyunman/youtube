@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 10px;
+  margin: 5px 10px 10px;
   font-size: 1.5em;
   font-weight: bold;
   height: 7vh;
@@ -18,7 +18,7 @@
 
 .icons > svg {
   color: red;
-  font-size: 1.5em;
+  font-size: 2em;
   margin-right: 5px;
 }
 
