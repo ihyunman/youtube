@@ -3,6 +3,12 @@
   src: url("./fonts/Jalnan.ttf");
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
 body {
   width: 100vw;
   background-color: black;
