@@ -4,7 +4,7 @@
 }
 
 .video__detail--video {
-  width: 70%;
+  width: 69%;
 }
 
 .video__detail--title {
@@ -57,8 +57,7 @@
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
-  height: 0;
-  margin: 10px 20px;
+  margin: 0px 10px;
   border-radius: 5px;
 }
 
