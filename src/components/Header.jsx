@@ -10,6 +10,7 @@ function Header() {
   const navigator = useNavigate();
   const { params } = useParams();
   const { setKeyword } = useSearchAPI();
+
   useEffect(() => {
     setTitle(params || "");
   }, [params]);
