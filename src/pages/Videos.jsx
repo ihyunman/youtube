@@ -17,7 +17,7 @@ function Videos() {
   );
 
   return (
-    <ul className="videos">
+    <ul className="videos ">
       {videos &&
         videos.map((video) => {
           return <VideoCard key={video.id} video={video} type="popular" />;

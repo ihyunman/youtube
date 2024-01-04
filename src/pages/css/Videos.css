@@ -5,6 +5,10 @@
   margin: 0 20px;
 }
 
+.videos.related {
+  display: none;
+}
+
 .videos__col {
   display: flex;
   flex-direction: column;

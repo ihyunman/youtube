@@ -14,11 +14,12 @@ function VideoCard({ video, type }) {
       }
     );
   };
+
   return (
     <li className={`${classType}`} onClick={handleClick}>
       <img
         className={`${classType}__img`}
-        src={thumbnails.default.url}
+        src={thumbnails.medium.url}
         alt={title}
       />
       <div className={`${classType}__info`}>
