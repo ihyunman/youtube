@@ -3,6 +3,10 @@
   src: url("./fonts/Jalnan.ttf");
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
 * {
   margin: 0;
   padding: 0;
