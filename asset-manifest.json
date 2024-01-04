@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/youtube/static/css/main.c173ec73.css",
+    "main.css": "/youtube/static/css/main.19b5cddf.css",
     "main.js": "/youtube/static/js/main.5b655ff1.js",
     "static/media/Jalnan.ttf": "/youtube/static/media/Jalnan.4b55e11e029184231b61.ttf",
     "index.html": "/youtube/index.html"
   },
   "entrypoints": [
-    "static/css/main.c173ec73.css",
+    "static/css/main.19b5cddf.css",
     "static/js/main.5b655ff1.js"
   ]
 }
