@@ -10,7 +10,7 @@ function App() {
   return (
     <SearchContextProvider>
       <Header />
-      <div className="test">
+      <div className="container">
         <Sidebar />
         <QueryClientProvider client={queryClient}>
           <Outlet />

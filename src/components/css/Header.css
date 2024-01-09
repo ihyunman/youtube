@@ -1,11 +1,15 @@
 .header {
+  position: sticky;
+  top: 0;
+  background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 5px 10px 10px;
+  margin: 5px 0px 10px;
   font-size: 1.5em;
   font-weight: bold;
-  height: 7vh;
+  height: 10vh;
+  z-index: 2;
 }
 
 .icons {
@@ -14,6 +18,7 @@
   color: white;
   text-decoration: none;
   font-family: "yeogi";
+  margin-left: 10px;
 }
 
 .icons > svg {
@@ -58,6 +63,7 @@
 .header__user--btn {
   width: 40px;
   height: 40px;
+  margin-right: 10px;
   cursor: pointer;
 }
 
