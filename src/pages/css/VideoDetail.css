@@ -53,10 +53,6 @@
   -webkit-line-clamp: 4;
 }
 
-/* .video__detail--list {
-  width: 30%;
-} */
-
 .video__detail--list {
   flex: 1;
 }

@@ -11,7 +11,7 @@
 }
 
 .video__img:hover,
-.videor__img {
+.videor__img:hover {
   opacity: 0.9;
   border-radius: 0px;
   transform: scale(1.05);
@@ -38,7 +38,7 @@
 
 .videor {
   display: flex;
-  margin: 0px 0px;
+  margin: 4px 0px;
   cursor: pointer;
 }
 
