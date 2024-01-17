@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/youtube/static/css/main.4369a251.css",
-    "main.js": "/youtube/static/js/main.51a0da3b.js",
+    "main.css": "/youtube/static/css/main.f73f1a71.css",
+    "main.js": "/youtube/static/js/main.f9650d3c.js",
     "static/media/Jalnan.ttf": "/youtube/static/media/Jalnan.4b55e11e029184231b61.ttf",
     "index.html": "/youtube/index.html"
   },
   "entrypoints": [
-    "static/css/main.4369a251.css",
-    "static/js/main.51a0da3b.js"
+    "static/css/main.f73f1a71.css",
+    "static/js/main.f9650d3c.js"
   ]
 }
