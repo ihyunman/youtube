@@ -6,13 +6,9 @@ import VideoCard from "../components/VideoCard";
 import "./css/VideoDetail.css";
 import VideoInfo from "../components/VideoInfo";
 function VideoDetail() {
-  const { data: videos } = useQuery(
-    ["videos", "related", { keyword: " " }],
-    getVideos,
-    {
-      retry: 0,
-    }
-  );
+  const { data: videos } = useQuery(["videos", { keyword: " " }], getVideos, {
+    retry: 0,
+  });
 
   const video = useLocation().state;
   const { title, description, channelTitle, thumbnails } = video.snippet;

@@ -7,7 +7,7 @@ import { useSearchAPI } from "../context/SearchAPI";
 function Videos() {
   const { keyword } = useSearchAPI();
 
-  const { data: videos } = useQuery(["videos", "popular", keyword], getVideos, {
+  const { data: videos } = useQuery(["videos", keyword], getVideos, {
     staleTime: 1000 * 5 * 60,
     retry: 0,
   });
